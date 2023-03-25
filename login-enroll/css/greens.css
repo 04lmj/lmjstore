@@ -1,0 +1,231 @@
+*{
+    margin: 0 auto;
+}
+ul{
+    float: left;    
+    list-style: none;
+    line-height: 33px;
+}
+#nav {
+    width: 97%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: -18px;
+    top: -44px;
+    height: 40px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: start;
+ }         
+#nav ul {
+ list-style: none;
+ margin-left: 50px;
+ }           
+#nav li {
+ display: inline;                
+ }           
+#nav a {
+ line-height: 40px;
+ color: darkgrey;
+ text-decoration: none;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ }           
+#top1{
+    padding-left:85px;
+}
+#top2{
+    padding-left: 120px;
+}
+#top3{
+    padding-left: 113px;
+}
+#top4{
+    padding-left: 131px;
+}
+#top5{
+    padding-left: 102px;
+}
+#top6{
+    padding-left: 82px;
+}
+.ul-top{
+    padding-left: 0%;
+}
+.add{
+    position: absolute;
+    left: 90px;
+    top: -100px;
+    width: 100px;
+    height: 44px;
+    background-color:rgb(232,244,255);
+    cursor: pointer;
+}
+.delete{
+    position: absolute;
+    left: 195px;
+    top: -100px;
+    width: 100px;
+    height: 44px;
+    background-color: rgb(255,241,241);
+    cursor: pointer;
+}
+.box{
+    position: absolute;
+    left: 310px;
+    top: -100px;
+    width:500px;
+    height:40px;
+    border:2px solid blue;
+    margin:auto;
+}
+.input{
+    float:left;
+    width:400px;
+    height:38px;
+    outline:none;
+    border:none;
+}
+.button{
+	float:left;
+	width:96px;
+	height:40px;
+	color:white;
+	background-color:blue;
+	border:none;
+	outline:none;
+}
+.upupdate{
+    width: 100%;
+    background-color: rgb(232,244,255);
+    position: absolute;
+    height: 340px;
+    top: -8%;
+    display: none;
+}
+.upupdate input{
+    margin: 0 auto;
+    display: block;
+    width: 38%;
+    height: 40px;
+    margin-bottom: 14px;
+}
+.upupdate button{
+    position: relative;
+   left: 40%;
+    width: 10%;
+    height: 40px;
+}
+.ada{
+    width: 100%;
+    background-color: rgb(232,244,255);
+    position: absolute;
+    height: 340px;
+    top: -8%;
+    display: none;
+}
+.ada input{
+    margin: 0 auto;
+    display: block;
+    width: 38%;
+    height: 40px;
+    margin-bottom: 14px;
+}
+.ada button{
+    position: relative;
+   left: 40%;
+    width: 10%;
+    height: 40px;
+}
+#ul1 li span{
+    display: block;
+    float: left;
+    width: 187px;
+    text-align: center;
+}
+#searchpage{
+    width: 100%;
+    background-color: rgb(232,244,255);
+    position: absolute;
+    height: 300px;
+    top: -2%;
+    display: none;
+}
+#searchpage ul {
+    list-style: none;
+    margin-left: 50px;
+    }           
+#searchpage li {
+    display: block;                
+    }
+#searchpage-top{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -50px;
+    height: 40px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: start;
+    display: none;
+    padding-left: 0px;
+    display: none;
+}
+#searchpage-top li {
+    display: block;
+    float: left;
+    margin-right: 67px;
+    margin-left: 76px;             
+    }           
+#searchpage-top a {
+    line-height: 40px;
+    color: darkgrey;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }     
+#searchpage li span{
+    display: block;
+    float: left;
+    width: 182px;
+    height: 35px;
+    text-align: center;
+    line-height:35px;
+    }      
+#closepage{
+    position: absolute;
+    top: -14%;
+    left: 85%;
+    display: none;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+}   
+#change-button{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 100px;
+    bottom: 4px;
+    display: flex;
+    justify-content: center;
+}
+.button-left{
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 8px;
+}
+#button-center{
+    width: 30px;
+    height: 30px;
+    background-color: antiquewhite;
+}
+.button-right{
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 8px;
+}

@@ -1,0 +1,69 @@
+*{
+  margin: 0 auto;
+}
+.sidenav {
+    height: 100%;
+    width: 16%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(83,128,184);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  /* 设置 sidenav 链接和下拉按钮的样式 */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+.dropdown-btn::after{
+    content: '';
+		position: absolute;
+		top: 70px;
+		right: 70px;
+		width: 10px;
+		height: 10px;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		transform: rotate(135deg);
+		transition: all .3s;
+}
+.dropdown-btn:hover::after{
+  transform: rotate(45deg);
+}
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+.main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+  }
+.active {
+    color: white;
+  }
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+  }
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+#mainContent{
+    position: absolute;
+    left: 16%;
+    top: 23%;
+    width: 84%;
+    height: 300px;
+  }

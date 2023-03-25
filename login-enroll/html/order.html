@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+      <button class="add" style="color: rgb(36,172,242);" onclick="add()">添加订单</button>
+      <div class="box">
+        <input type="text"  class="input" placeholder="请输入订单名或客户手机号" id="inin">
+        <!--placeholder是文本框中的提示文字-->
+        <input type="button" value="搜索" class="button" onclick="search()">
+     </div>
+      <ul id="nav">
+         <li><a href="#" class="ul-top" id="top1">用户名</a></li>
+         <li><a href="#" class="ul-top" id="top2">订单金额</a></li>
+         <li><a href="#" class="ul-top" id="top3">客户手机号</a></li>
+         <li><a href="#" class="ul-top" id="top4">支付状态</a></li>
+         <li><a href="#" class="ul-top" id="top5" style="display: none;">id</a></li>
+         <li><a href="#" class="ul-top" id="top6">操作</a></li>
+        </ul>
+      <ul id="ul1" class="ul-down">
+         <span class="liSpan"></span>
+         <span class="liSpan"></span>
+         <span class="liSpan"></span>
+         <span class="liSpan"></span>
+         <span class="liSpan" style="display: none;"></span>
+         <button onclick="revise(event)">修改</button>
+         <button onclick="delete1()">删除</button>
+      </ul>
+      <div class="upupdate">
+         <h2 style="margin: 0 auto; color: blue; text-align: center;">请输入要修改的信息</h2>
+         <input type="text" autocomplete="off" id="name" placeholder="用户名">
+         <input type="text" autocomplete="off" id="amount" placeholder="订单金额">
+         <input type="text" autocomplete="off" id="phone" placeholder="手机号">
+         <input type="text" autocomplete="off" id="pay" placeholder="支付状态">
+         <input type="text" autocomplete="off" id="id" placeholder="id" style="display: none;">
+         <button onclick="yes()">确认</button>
+         <button onclick="no()">取消</button>
+      </div>
+      <div class="ada">
+         <h2 style="margin: 0 auto; color: blue; text-align: center;">请输入要添加的订单信息</h2>
+         <input type="text" autocomplete="off" id="name1" placeholder="用户名">
+         <input type="text" autocomplete="off" id="amount1" placeholder="订单金额">
+         <input type="text" autocomplete="off" id="phone1" placeholder="手机号">
+         <input type="text" autocomplete="off" id="pay1" placeholder="支付状态">
+         <input type="text" autocomplete="off" id="id1" placeholder="id" style="display: none;">
+         <button onclick="yesadd()">确认</button>
+         <button onclick="noadd()">取消</button>
+      </div>
+      <ul id="searchpage-top">
+         <li><a href="#" class="ul-top" >用户名</a></li>
+         <li><a href="#" class="ul-top" >订单金额</a></li>
+         <li><a href="#" class="ul-top" >客户手机号</a></li>
+         <li><a href="#" class="ul-top" >支付状态</a></li>
+      </ul>
+      <div id="searchpage">
+        <ul id="sea" class="ul-down">
+         <span class="liSpan"></span>
+         <span class="liSpan"></span>
+         <span class="liSpan"></span>
+         <span class="liSpan"></span>
+         <span class="liSpan" style="display: none;"></span>
+       </ul>
+      </div>
+      <button id="closepage" onclick="closepage()">关闭</button>
+      <div id="change-button">
+         <div class="button-left" onclick="button(-1)">
+            <img src="../image/left.png" style="width: 30px;" height="30px; ">
+        </div>
+        <div id="button-center">
+        </div>
+        <div class="button-right" onclick="button(1)">
+            <img src="../image/right.png" style="width: 30px;" height="30px; ">
+        </div>
+    </div>
+      <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+      <script type="text/javascript" src="../js/order.js"></script> 
+
+</body>
+</html>
